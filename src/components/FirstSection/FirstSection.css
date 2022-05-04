@@ -1,0 +1,89 @@
+.bg{
+    width: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+.box{
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.first-desc{
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.first-title{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.second-title{
+    display: flex;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.second-desc{
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+}
+
+.products-card{
+    width: 30%;
+}
+
+.products-card img{
+    width: 100%;
+}
+
+.products-card__name{
+    font-size: 17px;
+    color: rgba(255, 254, 254, 0.836);
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.products-card__description{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.37);
+    padding-bottom: 10px;
+}
+
+.products-card__price{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.view-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.view-text{
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-size: 15px;
+}

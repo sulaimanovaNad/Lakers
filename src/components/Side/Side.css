@@ -1,0 +1,37 @@
+.side{
+    display: flex;
+    font-family: 'Roboto',sans-serif;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.east{
+    width: 45%;
+}
+
+.east p {
+    border-bottom: 2px solid #0949EF;
+    padding-bottom: 10px;
+}
+
+.west{
+    width: 45%;
+}
+
+.west p {
+    border-bottom: 2px solid #FB0223;
+    padding-bottom: 10px;
+}
+
+.side-box{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.side-box img{
+    padding-top: 15px;
+}

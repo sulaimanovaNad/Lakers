@@ -1,0 +1,19 @@
+.nike{
+    font-size: 20px;
+    font-family: "Roboto",sans-serif;
+    text-transform: none;
+}
+
+.nike img{
+    width: 100%;
+}
+
+.nike-club{
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.nike-home{
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.432);
+}

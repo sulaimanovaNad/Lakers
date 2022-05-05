@@ -4,70 +4,11 @@ import { FirstSection } from './components/FirstSection/FirstSection';
 import { Side } from './components/Side/Side';
 import { Basketball } from './components/Basketball/Basketball';
 import { TheNike } from './components/TheNike/TheNike';
-import lakers from './components/image/lakers.png'
-import circle from './components/image/circle-white.png'
+import circle from './image/circle-white.png'
+import { bestsellers, kobebryant, teamUSA} from './mocks/home'
 
 function App() {
-  const bestsellers = [
-    {
-      name: 'LeBron James Lakers City Edition ',
-      image: lakers,
-      description: 'Nike NBA Swingman Jersey',
-      price: '$290',
-    },
-    {
-      name: 'LeBron James Lakers City Edition ',
-      image: lakers,
-      description: 'Nike NBA Swingman Jersey',
-      price: '$290',
-    },
-    {
-      name: 'LeBron James Lakers City Edition ',
-      image: lakers,
-      description: 'Nike NBA Swingman Jersey',
-      price: '$290',
-    },
-  ]
-  const kobebryant = [
-    {
-      name: 'Kobe Bryant Laker Authentic Edition ',
-      image: lakers,
-      description: 'Nike NBA Authentic Jersey Purple',
-      price: '$240',
-    },
-    {
-      name: 'Kobe Bryant Laker Authentic Edition ',
-      image: lakers,
-      description: 'Nike NBA Authentic Jersey Purple',
-      price: '$370',
-    },
-    {
-      name: 'Kobe Bryant Laker Authentic Edition ',
-      image: lakers,
-      description: 'Nike NBA Authentic Jersey Purple',
-      price: '$179',
-    },
-  ]
-  const teamUSA = [
-    {
-      name: 'Michael Jordan ‘92 Olympics USA',
-      image: lakers,
-      description: 'Nike NBA ‘92 Olympics Dream Team USA Classics Authentic Jersey',
-      price: '$532',
-    },
-    {
-      name: 'Michael Jordan ‘92 Olympics USA',
-      image: lakers,
-      description: 'Nike NBA ‘92 Olympics Dream Team USA Classics Authentic Jersey',
-      price: '$632',
-    },
-    {
-      name: 'Kobe Bryant Laker Authentic Edition',
-      image: lakers,
-      description: 'Nike NBA Authentic Jersey Purple',
-      price: '$115',
-    },
-  ]
+  console.log(bestsellers)
   return (
     <div className="App">
       <Header />

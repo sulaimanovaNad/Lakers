@@ -1,5 +1,5 @@
 import './Basketball.css'
-import img from '../image/Slider.png'
+import img from '../../image/Slider.png'
 
 export function Basketball() {
     return (

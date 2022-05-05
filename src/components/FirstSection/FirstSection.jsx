@@ -12,7 +12,7 @@ export function FirstSection(props) {
         secondDescTwo,
         firstWord,
         secondWord,
-        firstTitleColor,
+        firstTitleColor, 
         secondTitleColor,
         firstWordColor,
         secondWordColor,

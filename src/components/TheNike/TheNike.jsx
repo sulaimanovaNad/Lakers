@@ -1,5 +1,5 @@
 import './TheNike.css'
-import nike from '../image/thenike.png'
+import nike from '../../image/thenike.png'
 
 export function TheNike() {
     return (

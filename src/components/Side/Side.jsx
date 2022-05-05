@@ -1,5 +1,5 @@
 import './Side.css'
-import img from '../image/Rectangle 4.png'
+import img from '../../image/Rectangle 4.png'
 
 export function Side() {
     return (

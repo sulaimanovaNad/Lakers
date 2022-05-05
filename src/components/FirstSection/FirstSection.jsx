@@ -66,7 +66,7 @@ export function FirstSection(props) {
                             </p>
                         </div>
                         <div>
-                            {img && <img src={img} alt="" />}
+                            {img && <img className='circle-white' src={img} alt="" />}
                         </div>
                     </div>
                 </div>

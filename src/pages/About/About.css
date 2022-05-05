@@ -1,0 +1,30 @@
+.about {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.about img{
+    width: 100%;
+}
+
+.history-box{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.history-box h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 80%;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(27, 16, 139);
+}
+
+.history-box p{
+    font-size: 20px;
+}

@@ -4,49 +4,6 @@ a{
     text-decoration: none;
 }
 
-header{
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 90px;
-}
-
-.header{
-    border-bottom: 2px solid #000;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 20%;
-}
-
-.nav{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
-}
-
-.nav a{
-    color: #000;
-    font-weight: 500;
-    text-transform: uppercase;
-
-}
-
-.icon{
-    width: 20%;
-    text-align: end;
-}
-
-.icon img{
-    margin-left: 30px;
-}
-
 .collaborators {
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
@@ -80,7 +37,17 @@ header{
 .circle{
     display: flex;
     align-items: center;
+    animation: moveAround 8s infinite linear;
 }
+
+@keyframes moveAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .description{
     display: flex;

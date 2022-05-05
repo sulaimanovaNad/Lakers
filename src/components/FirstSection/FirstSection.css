@@ -87,3 +87,16 @@ p{
     text-transform: none;
     font-size: 15px;
 }
+
+.circle-white{
+    animation: moveAround 8s infinite linear;
+}
+
+@keyframes moveAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

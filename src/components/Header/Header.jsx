@@ -1,31 +1,32 @@
 import './Header.css'
-import circle from '../../image/circle.png'
-import pict from '../../image/Pict.png'
-
-export function Header() {
+import {Link} from 'react-router-dom'
+import logo from '../../image/Logo.png'
+import favorite from '../../image/Favorite.png'
+import cart from '../../image/Cart.png'
+ 
+export default function Header () {
     return (
-        <header>
-            <div className="title">
-                <div>
-                    <p> Jersey</p>
-                </div>
-                <div className='circle'>
-                    <img src={circle} alt="" />
-                </div>
-                <div>
-                    <p>Nba</p>
-                </div>
-            </div>
-            <div className='description'>
-                <p>
-                    whichever <span className="blue">nba</span> <span className="red">team</span> your support,
-                    get your jersey here today.
-                </p>
-            </div>
-            <div className='pict'>
-                <img src={pict} alt="" />
-            </div>
-        </header>
+        <div className='header'>
+        <nav className='navbar'>
+          <div className='logo'>
+            <Link to="/"><img src={logo} alt="" /></Link>
+          </div>
+          <div className='nav'>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/signUp">SignUp</Link>
+            <a href="#">Teams</a>
+            <a href="#">App</a>
+          </div>
+          <div className='icon'>
+            <img src={favorite} alt="" />
+            <img src={cart} alt="" />
+          </div>
+        </nav>
+        <div className="collaborators">
+          <p>Jersey</p>
+          <p>Nike & nba collaboration</p>
+        </div>
+      </div>
     )
 }
-

@@ -1,4 +1,5 @@
 import './FirstSection.css'
+import { useState } from 'react'
 
 export function FirstSection(props) {
     const {
@@ -12,7 +13,7 @@ export function FirstSection(props) {
         secondDescTwo,
         firstWord,
         secondWord,
-        firstTitleColor, 
+        firstTitleColor,
         secondTitleColor,
         firstWordColor,
         secondWordColor,
@@ -21,8 +22,16 @@ export function FirstSection(props) {
         img,
         sectionTwo,
         widthDesc,
+        search,
     } = props
 
+
+    const renderProducts = products && products.filter(product => {
+        return (
+            product.name.toLowerCase().includes(search.toLowerCase())
+        )
+    })
+    const [activeItem, setActiveItem] = useState(false)
     return (
         <div style={{ background: bgColor }} className='bg'>
             <div style={{ color: color }} className='box'>
@@ -42,18 +51,19 @@ export function FirstSection(props) {
                     {secondDescTwo && <p style={{ width: widthDesc }}>{secondDescTwo}</p>}
                 </div>
                 <div className='products'>
-                    {products && products.map((item, i) => {
+                    {renderProducts && renderProducts.map((item, i) => {
                         return (
                             <div key={i} className="products-card">
-                                <img src={item.image} alt="" />
+                                <img onClick={() => setActiveItem(item)} src={item.image} alt="" />
                                 <div className="products-card__name">{item.name}</div>
-                                <div className="products-card__description">{item.description}</div>
+                                <div className="products-card__description">{item.smallDesc}</div>
                                 <div className="products-card__price">{item.price}</div>
                                 <div>
                                 </div>
                             </div>
                         )
                     })}
+
                 </div>
                 {sectionTwo && <div>{sectionTwo}</div>}
                 <div>
@@ -69,6 +79,31 @@ export function FirstSection(props) {
                             {img && <img className='circle-white' src={img} alt="" />}
                         </div>
                     </div>
+                </div>
+                <div className='modal'>
+                    {activeItem && 
+                        <div className='popup'>
+                            <a href="" className='popup-area'></a>
+                            <div className="popup-body">
+                                <div className="popup-content">
+                                    <a href="" className='popup-close'><svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.00023 5.58599L11.9502 0.635986L13.3642 2.04999L8.41423 6.99999L13.3642 11.95L11.9502 13.364L7.00023 8.41399L2.05023 13.364L0.63623 11.95L5.58623 6.99999L0.63623 2.04999L2.05023 0.635986L7.00023 5.58599Z" fill="white" />
+                                    </svg>
+                                    </a>
+                                    <div className="popup-box">
+                                        <div className='popup-img'>
+                                            <img src={activeItem.image} alt="" />
+                                        </div>
+                                        <div className='popup-text'>
+                                            <div className='popup-name'>{activeItem.name}</div>
+                                            <div className='popup-description'>{activeItem.description}</div>
+                                            <div className='popup-price'>{activeItem.price}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

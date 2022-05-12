@@ -1,0 +1,18 @@
+.inputVal{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.inputVal Input{
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.inputVal img{
+    width: 35px;
+}

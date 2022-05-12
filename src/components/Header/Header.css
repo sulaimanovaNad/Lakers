@@ -4,75 +4,47 @@ a{
     text-decoration: none;
 }
 
-.collaborators {
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-    font-weight: 900;
-    margin-top: 20px;
-    margin-bottom: 20px;
+header{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
 }
 
-.collaborators p::before{
-    content: " • ";
-    color: #000;
-    font-weight: 900;
+.header{
+    width: 80%;
+    margin: auto;
+    border-bottom: 2px solid #000;
 }
 
-.title{
-    font-family: 'Orbitron', sans-serif;
-    width: 100%;
+.navbar{
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #000;
+    margin-top: 30px;
 }
 
-.title p{
-    font-size: 130px;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 0;
+.logo{
+    width: 20%;
 }
 
-.circle{
+.nav{
+    width: 30%;
     display: flex;
-    align-items: center;
-    animation: moveAround 8s infinite linear;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
 }
 
-@keyframes moveAround {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-.description{
-    display: flex;
-    justify-content: end;
-    padding-bottom: 20px;
-}
-
-.description p {
-    width: 35%;
+.nav a{
+    color: #000;
+    font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 2px solid #000;
+
 }
 
-.blue{
-    color: blue;
+.icon{
+    width: 20%;
+    text-align: end;
 }
 
-.red{
-    color: red;
-}
-
-.pict img{
-    width: 100%;
+.icon img{
+    margin-left: 30px;
 }

@@ -82,6 +82,16 @@ header{
     align-items: center;
 }
 
+.circle img{
+    animation: circleMove 4s infinite;
+}
+
+@keyframes circleMove {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .description{
     display: flex;
     justify-content: end;
